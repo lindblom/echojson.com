@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Echo JSON</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  
+  <div id="wrapper">
+    <div class="inner">
+      <h1>Echo JSON</h1>
+      <div class="content">
+        <h2>Usage</h2>
+        <p>A request to <span class="url"><a href="http://echojson.com/hello/[1,2,3]">http://echojson.com/hello/[1,2,3]</a></span> will return the following JSON.</p>
+        <script src="https://gist.github.com/4648059.js"></script>
+        <p>A request to <span class="url"><a href='http://echojson.com/hello/{"a":1}'>http://echojson.com/hello/{"a":1}</a></span> will return the following JSON.</p>
+        <script src="https://gist.github.com/4648072.js"></script>
+        <p>You can also post JSON to any url and get the JSON you posted as returned.</p>
+        <p>Supports JSONP via <span class="url">?callback=</span> Turn off history with <span class="url">?history=false</span></p>
+        <h2>History</h2>
+        <p>We save the latest 20 request. Have a look <a href="http://echojson.com/_history">here</a>! You can flush our history by sending a DELETE request to <span class="url">/_history</span></p>
+      </div>
+      <p class="footer">Built by <a href="http://twitter.com/frozzare">@frozzare</a> with some help from <a href="http://twitter.com/lindblomco">@lindblomco</a>.</p>
+    </div>
+  </div>
+  <script type="text/javascript">
+  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20991800-8']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  
+  </script>
+</body>
+</html>
